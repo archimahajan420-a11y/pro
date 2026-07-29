@@ -69,7 +69,7 @@
         background-repeat: no-repeat;
         background-size: 100%;
         text-align: center;
-        color: rgb(237, 33, 71);
+        color:white;
     }
     .f{
       border: 20px;
@@ -85,11 +85,12 @@
     }
     .as{
         background-color: black;
-        color: firebrick;
+        color: white;
     }
     .Home{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: aquamarine;
+        color: rgb(18, 19, 19);
+        text-align: center;
     }
     .m{
         padding: 10px;
@@ -118,27 +119,39 @@
        
     }
     .x{
-        padding: 10px;
-        margin: 10px;
-        
-        justify-content: center;
-        display: flex;
        
+        justify-content: space-around;
+        display: flex;
+        margin-top: 30px;
+       
+    }
+    .archi{
+        padding: 15px;
+       border-radius: 12px;
+        width: 280px;
+        background: rgb(16, 16, 16);
+       box-shadow: 0 0 10px lightgoldenrodyellow;
+    }
+    .archi img{
+        width: 100%;
+        height: 200px;
+        
+        border-radius: 10px;
+    }
+    .archi button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(245, 149, 65);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }
     
     .k{
-         padding: 10px;
-        /* margin: 10px; */
-         display: flex;
-         justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        border-radius: 5PX;
-        /* font-weight: 200;
-        font-style: italic;
-        color: burlywood;
-        border-style: double;
-        border-color: peru; */
+         padding: 30px;
+         text-align: center;
+       
  }
  .s{
     display: flex;
@@ -153,7 +166,7 @@
     <nav>
          <a href="we provide best quality food">Home</a>
          <a href="#menu"> Menu</a>
-         <a href="#">About</a>
+         <a href="#home">About</a>
          <a href="Reservation.html">Reservation</a>
          <a href="#photos">Photos</a>
          <a href="#location">Location</a>
@@ -162,12 +175,17 @@
     </nav>
     </section>
     <hr>
+    <section id="HOME">
+        <h1 class="Home">Welcome to Hungry Hub</h1>
+        <p>Hungry Hub is a restaurant that offers a wide variety of delicious dishes to satisfy every craving. Our menu features a range of options, from classic comfort foods to innovative culinary creations. Whether you're in the mood for a hearty meal or a light snack, Hungry Hub has something for everyone. Join us for an unforgettable dining experience!</p>
+    </section>
+    <hr>
 
     <section class="b">
         <br>
            
   
-        <h1> HUNGRY HUB </h1>
+       
     </header>
     </section>
     <HR>
@@ -182,9 +200,26 @@ Sunday from 12 pm until late</H3></div>
     <section class="K" id="menu">
         <h1>MENU</h1>
         <div class="x">
-       <img SRC="k.webp"></div>
-       <div class="x" ><img SRC="t.webp"></div>
-        
+       <div class="archi">
+        <img src="s.webp" alt="Menu Item 1" >
+        <button>View Menu</button>
+       </div>
+       <div class="archi">
+        <img src="k.webp" alt="Menu Item 2" >
+        <button>View Menu</button>
+       </div>
+       <div class="archi">
+        <img src="mah (1).webp" alt="Menu Item 3" >
+        <button>View Menu</button>
+
+         </div>
+         <div class="archi">
+            <img src="mah (2).webp" alt="Menu Item 4" >
+            <button>View Menu</button>
+    
+             </div>
+        </div>
+            
     </section>
 
     <hr>
