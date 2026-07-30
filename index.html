@@ -12,16 +12,30 @@
         background-color: white;
     }
     nav{
-        background-color: black;
-        padding: 5px;
+       
+        padding: 15px 50px;
         text-align: center;
+        position: sticky;
+         top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        background:#111;
+
     }
     nav a{
-        text-decoration: double;
+        text-decoration: none;
+        font-size: 18px;
         color: azure;
-        margin: 48px;
+        margin: 0 15px;
+        transition: 0.3s;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+    }
+    nav a:hover{
+        color: #f5b041;
     }
    
     .k{
@@ -75,10 +89,10 @@
       border: 20px;
         border-radius: 20px;
         text-decoration: dotted;font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
+        text-align: start;
         background-color: burlywood;
         height: 100px;
-        width:600px;
+        width:480px;
         border-color: black;
         border-style: double;
            
@@ -88,18 +102,41 @@
         color: white;
     }
     .Home{
+        height: 100vh;
+        background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("OIP (1).webp") no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: rgb(18, 19, 19);
         text-align: center;
+        padding-top: 80px;
+    }
+    .ahome h1{
+       font-size: 65px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+
+    }
+    .ahome p{
+       /* /
+        display: flex;
+        justify-content: center; */
+        font-size: 22px;
+       text-align: center;
+      
+        
+
     }
     .m{
-        padding: 10px;
-        margin: 10px;
-         display: flex;
         
-        gap: 20px;
-        height: 250px;
-        width: 250px;
+        justify-content: space-around;
+        display: flex;
+        margin-top: 30px;
        
 
     }
@@ -110,13 +147,17 @@
 
     }
     .t{
-       padding: 5px; 
-       margin: 10px;
-         display: flex;
-        gap: 20px;
-        height: 230px;
+       padding: 15px;
+       border-radius: 12px;
         width: 200px;
-       
+        background: rgb(243, 201, 110);
+       box-shadow: 0 0 10px lightgoldenrodyellow;
+    }
+    .t img{
+        width: 100%;
+        height: 200px;
+        
+        border-radius: 10px;
     }
     .x{
        
@@ -166,17 +207,17 @@
     <nav>
          <a href="we provide best quality food">Home</a>
          <a href="#menu"> Menu</a>
-         <a href="#home">About</a>
+         <a href="#about">About</a>
          <a href="Reservation.html">Reservation</a>
          <a href="#photos">Photos</a>
          <a href="#location">Location</a>
          <a href="#">Reviews</a>
-         <a href="#">Contact</a>
+         <a href="1234567890">Contact</a>
     </nav>
     </section>
     <hr>
-    <section id="HOME">
-        <h1 class="Home">Welcome to Hungry Hub</h1>
+    <section class="ahome" id="about">
+        <h1 class="aHome">Welcome to Hungry Hub</h1>
         <p>Hungry Hub is a restaurant that offers a wide variety of delicious dishes to satisfy every craving. Our menu features a range of options, from classic comfort foods to innovative culinary creations. Whether you're in the mood for a hearty meal or a light snack, Hungry Hub has something for everyone. Join us for an unforgettable dining experience!</p>
     </section>
     <hr>
@@ -229,11 +270,11 @@ Sunday from 12 pm until late</H3></div>
 <div class="m" id="photos">
 
      
-        <img src="a.webp">
-    <img src="m.webp">
+       <div class="t" ><img src="a.webp"></div>
+   <div class="t" > <img src="m.webp"></div>
     
-    <div class="t" > <img src="s.webp">
-    <img SRC="r.webp">
+    <div class="t" > <img src="s.webp"></div>
+   <div class="t" > <img SRC="r.webp"></div>
     </div>
         
        </div>
@@ -243,7 +284,7 @@ Sunday from 12 pm until late</H3></div>
 <div class="f">
     <section>
        
-        <h1> MAKE A RESERVATION With Us </h1>
+        <h1> RESERVATION AVAILABLE</h1>
     </section>
     </div>
     
